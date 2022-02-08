@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.options-cont {
+    height: 4rem;
+    width: 3.5rem;
+    top: 2rem;
+    left: 2rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f1f2f6;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.tools-cont {
+    display: flex;
+    height: 5rem;
+    width: 55vw;
+    background-color: #f1f2f6;
+    justify-content: space-around;
+    padding: 10px;
+    top: 2rem;
+    left: 25vw;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.tools-cont > * {
+    display: block;
+    width: 4rem;
+    cursor: pointer;
+    
+}
+
+.pencil-tool-cont {
+    background-color: f1f2f6;
+    height: 5rem;
+    width: 7rem;
+    position: absolute;
+    top: 7rem;
+    left: 25vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15%;
+}
+
+.pencil-tool-width{
+    height: 2rem;
+    background-color: f1f2f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pencil-tool-width input{
+    width: 80%;
+}
+.pencil-color-cont{
+    background-color: f1f2f6;
+    height: calc(100% - 2rem);
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pencil-color {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: f1f2f6;
+}
+.black{
+    background-color: black;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+
+.eraser-tool-cont {
+    height: 2rem;
+    width: 7rem;
+    background-color: f1f2f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 7rem;
+    left: calc(25vw + 8rem);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15%;
+}
+
+.eraser-tool-width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: f1f2f6;
+}
+
+.eraser-tool-width input{
+    width: 80%;
+}
