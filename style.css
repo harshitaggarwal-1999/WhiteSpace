@@ -158,7 +158,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
 }
 
 .minimize i {
@@ -172,7 +173,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
 }
 
 .close i {
