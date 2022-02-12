@@ -10,6 +10,9 @@ let eraserToolCont = document.querySelector(".eraser-tool-cont");
 let eraser = document.querySelector(".eraser");
 let eraserToolContFlag = false;
 
+let stickyNoteCont = document.querySelector(".sticky-cont");
+let stickyNote = document.querySelector(".notes");
+let stickyNoteFlag = false;
 
 optionsCont.addEventListener("click", (e) => {
     //true -> tools show , false -> tools hide
@@ -59,6 +62,16 @@ eraser.addEventListener("click", (e) => {
         eraserToolCont.style.display = "flex";
     } else {
         eraserToolCont.style.display = "none";
+    }
+})
+
+stickyNote.addEventListener("click", (e) => {
+    stickyNoteFlag = !stickyNoteFlag;
+
+    if(stickyNoteFlag){
+        stickyNoteCont.style.display = "block";
+    }else{
+        stickyNoteCont.style.display = "none";
     }
 })
 
