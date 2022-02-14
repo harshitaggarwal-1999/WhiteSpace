@@ -75,55 +75,39 @@ upload.addEventListener("click", (e) => {
         let file = input.files[0];
         let url = URL.createObjectURL(file);
 
-        let stickyCont = document.createElement("div");
-        stickyCont.setAttribute("class", "sticky-cont");
-        stickyCont.innerHTML = `
-        <div class="sticky-header-cont">
-            <div class="minimize"></div>
-            <div class="remove"></div>
+        let stickyTemplateHTML = ` <div class="sticky-header-cont">
+        <div class="minimize"></div>
+        <div class="remove"></div>
         </div>
         <div class="sticky-note-cont">
         <img src = "${url}"/>
         </div>
         `;
 
-        document.body.appendChild(stickyCont);
+        createSticky(stickyTemplateHTML);
 
-        let minimize = stickyCont.querySelector(".minimize");
-        let remove = stickyCont.querySelector(".remove");
-
-        noteActions(minimize, remove, stickyCont);
-
-        stickyCont.onmousedown = function (event) {
-            if (event.target.classList.contains("remove") || event.target.classList.contains("minimize"))
-                return;
-            else
-                dragAndDrop(stickyCont, event);
-        };
-
-        stickyCont.ondragstart = function () {
-            return false;
-        };
     })
-
-
-
-
 })
 
 sticky.addEventListener("click", (e) => {
     // console.log("sticky clicked!!");
-    let stickyCont = document.createElement("div");
-    stickyCont.setAttribute("class", "sticky-cont");
-    stickyCont.innerHTML = `
-        <div class="sticky-header-cont">
-            <div class="minimize"></div>
-            <div class="remove"></div>
+
+    let stickyTemplateHTML = ` <div class="sticky-header-cont">
+        <div class="minimize"></div>
+        <div class="remove"></div>
         </div>
         <div class="sticky-note-cont">
             <textarea></textarea>
         </div>
     `;
+
+    createSticky(stickyTemplateHTML);
+})
+
+function createSticky(stickyTemplateHTML) {
+    let stickyCont = document.createElement("div");
+    stickyCont.setAttribute("class", "sticky-cont");
+    stickyCont.innerHTML = stickyTemplateHTML
 
     document.body.appendChild(stickyCont);
 
@@ -142,8 +126,7 @@ sticky.addEventListener("click", (e) => {
     stickyCont.ondragstart = function () {
         return false;
     };
-})
-
+}
 function noteActions(minimize, remove, stickyCont) {
     // console.log("notes actions called!!");
     remove.addEventListener("click", (e) => {
