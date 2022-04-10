@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WhiteSpace</title>
+</head>
+
+<body>
+    <div class="options-cont">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="tools-cont scale-tools">
+        <img class="pencil" src="Icons/pencil.svg" alt="pencil.svg">
+        <img class="eraser" src="Icons/eraser.svg" alt="eraser.svg">
+        <img class="download" src="Icons/download.svg" alt="download.svg">
+        <img class="upload" src="Icons/upload.svg" alt="upload.svg">
+        <img class="notes" src="Icons/notes.svg" alt="notes.svg">
+        <img class="redo" src="Icons/redo.svg" alt="redo.svg">
+        <img class="undo" src="Icons/undo.svg" alt="undo.svg">
+    </div>
+
+    <div class="pencil-tool-cont">
+        <div class="pencil-tool-width">
+            <input type="range" min="1" max="10" value="3" class="pencil-width">
+        </div>
+        <div class="pencil-color-cont">
+            <div class="black pencil-color"></div>
+            <div class="red pencil-color"></div>
+            <div class="blue pencil-color"></div>
+        </div>
+    </div>
+
+    <div class="eraser-tool-cont">
+        <div class="eraser-tool-width">
+            <input type="range" min="1" max="10" value="3" class="eraser-width">
+        </div>
+    </div>
+
+    <!-- <div class="sticky-cont">
+        <div class="sticky-header-cont">
+            <div class="minimize">
+                <i class="fa-regular fa-window-minimize fa-xs"></i>
+            </div>
+            <div class="close">
+                <i class="fa-solid fa-xmark fa-xs"></i>
+            </div>
+        </div>
+        <div class="sticky-note-cont">
+            <textarea></textarea>
+        </div>
+    </div> -->
+    <canvas></canvas>
+    <script src="tools.js"></script>
+    <script src="canvas.js"></script>
+</body>
+
+</html>
