@@ -83,7 +83,6 @@ upload.addEventListener("click", (e) => {
         <img src = "${url}"/>
         </div>
         `;
-
         createSticky(stickyTemplateHTML);
 
     })
