@@ -1,0 +1,26 @@
+{
+  "name": "whitespace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshitaggarwal-1999/WhiteSpace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshitaggarwal-1999/WhiteSpace/issues"
+  },
+  "homepage": "https://github.com/harshitaggarwal-1999/WhiteSpace#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
